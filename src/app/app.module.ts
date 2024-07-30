@@ -11,6 +11,7 @@ import { CommonModule } from '@angular/common';
 import { MobileMenuDirective } from './directives/mobile-view-directive';
 import { PreLoaderService } from './services/pre-loader.service';
 import { FooterComponent } from './components/footer/footer.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { FooterComponent } from './components/footer/footer.component';
     ContactComponent,
     HomeComponent,
     FooterComponent,
-
+    NavbarComponent,
     MobileMenuDirective,
   ],
   imports: [
