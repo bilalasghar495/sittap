@@ -10,6 +10,7 @@ import { HomeComponent } from './components/home/home.component';
 import { CommonModule } from '@angular/common';
 import { MobileMenuDirective } from './directives/mobile-view-directive';
 import { PreLoaderService } from './services/pre-loader.service';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { PreLoaderService } from './services/pre-loader.service';
     ServicesComponent,
     ContactComponent,
     HomeComponent,
+    FooterComponent,
 
     MobileMenuDirective,
   ],
