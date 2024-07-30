@@ -18,17 +18,4 @@ export class HomeComponent implements OnInit {
       
   }
 
-  downloadCV(){
-    const filePath = '../../../assets/Resume.pdf';
-    const link = document.createElement('a');
-    link.setAttribute('target', '_blank');
-    link.setAttribute('href', filePath);
-    link.setAttribute('download', 'Resume.pdf');
-    document.body.appendChild(link);
-    link.click();
-    link.remove();
-  }
-
-
-
 }

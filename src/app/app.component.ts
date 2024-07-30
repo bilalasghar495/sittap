@@ -8,9 +8,7 @@ import { PreLoaderService } from './services/pre-loader.service';
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit {
-  title = 'Portfolio';
 
-  isLoading = this.preLoadService.isLoading$
 
   constructor(
      private router: Router,
@@ -19,14 +17,6 @@ export class AppComponent implements OnInit {
      {}
 
   ngOnInit(): void {
-
-    this.router.events.subscribe(event => {
-      if(event instanceof NavigationStart){
-        this.preLoadService.setLoadingState(true);
-      } else if (event instanceof NavigationEnd){
-        this.preLoadService.setLoadingState(false);
-      }
-    })
       
   }
 }
